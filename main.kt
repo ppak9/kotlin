@@ -1,14 +1,12 @@
-fun max(a: Int, b: Int) : Int{
-    return if(a > b) a else b
-}
-
-fun greet(name: String){
-    println("hello $name!")
-}
 
 fun main(){
-    val c = max(3,2)
-    println(c)
+    val score : Int = 5
 
-    greet("박종현")
+    var b = when(score){
+        1 -> "1"
+        2 -> "2"
+        in 3..Int.MAX_VALUE -> "nope!"
+        else -> "retry"
+    }
+    println(b)
 }
