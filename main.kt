@@ -1,7 +1,8 @@
 
-fun main(){
-    val score : Int = 5
-
+fun checking(){ 
+    print("insert number: ")
+    var score  = readLine()!!.toInt()
+    
     var b = when(score){
         1 -> "1"
         2 -> "2"
@@ -9,4 +10,7 @@ fun main(){
         else -> "retry"
     }
     println(b)
+}
+fun main(){
+    checking()
 }
